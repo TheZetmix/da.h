@@ -1,12 +1,12 @@
-### da.h - Dynamic Arrays in C
+## da.h - Dynamic Arrays in C
 
 ## WARNING: The library is in a very early version, so there may be bugs
 
-# Quick start
+### Quick start
 
 ```console
 make install
 ```
 After this you can use the library via #include "da.h"
 
-# To see how to use the library, there is an example example.c
+### To see how to use the library, there is an example example.c
