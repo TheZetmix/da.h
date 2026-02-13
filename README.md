@@ -10,3 +10,8 @@ sudo make install
 After this you can use the library via #include "da.h"
 
 ### To see how to use the library, there is an example example.c
+
+# Build it with gcc/clang
+```console
+gcc -o example example.c
+```
