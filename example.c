@@ -39,7 +39,7 @@ int main() {
     Point last = da_last(points);
     printf("\n=== da_last ===\n");
     printf("last element: (%d, %d)\n", last.x, last.y);
-    printf("the size has not changed: %zu\n", points.size);
+    printf("the size is still %zu\n", points.size);
     
     // and if you want to get the last element and remove it immediately, use da_pop()
     // you will get the value of the last element and it will be removed
@@ -48,7 +48,7 @@ int main() {
     printf("\n=== da_pop ===\n");
     printf("element removed: (%d, %d)\n", popped.x, popped.y);
     printf("new size: %zu\n", points.size);
-    printf("now the last element: (%d, %d)\n", 
+    printf("now the last element is (%d, %d)\n", 
            points.items[points.size-1].x, points.items[points.size-1].y);
     
     // clearing memory

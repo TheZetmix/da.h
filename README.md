@@ -5,7 +5,7 @@
 ### Quick start
 
 ```console
-make install
+sudo make install
 ```
 After this you can use the library via #include "da.h"
 
