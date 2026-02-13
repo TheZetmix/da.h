@@ -1,4 +1,4 @@
-## da.h - Dynamic Arrays in C
+# da.h - Dynamic Arrays in C
 
 ## WARNING: The library is in a very early version, so there may be bugs
 
