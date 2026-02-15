@@ -9,10 +9,24 @@ typedef struct {
 
 da_declare(Point); // create a dynamic array type for Point
 
-// the dynamic array type name for Point will be da_Point (dynamic_array_Point)
+// da_declare for Point will create a structure like this:
+/*
+  typedef struct {
+      Point *items; // array itself
+      size_t size;  // size of the array
+      size_t cap;   // capacity of the array (need for optimization)
+  } da_Point;
+ */
+
+// arr.cap is the size of the allocated memory for the array (in elements), to get
+// the size of the array in bytes you need to multiply arr.cap by the size of the type
+// for example, the array size for int would be arr.cap * sizeof(int)
+// this field is needed in order not to allocate new memory every time an element is
+// added to the array, since this is a rather expensive operation; instead, we allocate
+// many bytes at once
 
 // dynamic array types can be defined for any
-// existing type, including int, float, char, etc
+// existing type, including int, float, char, and of course for user declared types (such as Point)
 
 int main() {
     // create an array
