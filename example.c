@@ -8,6 +8,7 @@ typedef struct {
 } Point;
 
 da_declare(Point); // create a dynamic array type for Point
+// you can also use dynamic(int) arr = da_init() in any of your functions without having to define the type
 
 // da_declare for Point will create a structure like this:
 /*
