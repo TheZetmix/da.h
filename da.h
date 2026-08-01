@@ -56,6 +56,6 @@
 #define da_init() {.items = NULL, .size = 0, .cap = 0}
 #define da_declare(type) typedef struct {type *items; size_t size; size_t cap;} da_##type
 #define da_free(arr) do { free(arr.items); arr.items = NULL; arr.size = 0; arr.cap = 0; } while(0)
-#define list_of(type) struct {type *items; size_t size; size_t cap;}
+#define da_list(type) struct {type *items; size_t size; size_t cap;}
 
 #endif // DA_H
